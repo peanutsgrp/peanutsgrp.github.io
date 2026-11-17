@@ -1,0 +1,61 @@
+:root {
+    color-scheme: light;
+    --gold: #D4A835;
+    --paper: #FFFDF5;
+    --ink: #3D2E10;
+    --muted: #6B5730;
+    --line: #E6D7B2;
+}
+
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+a { color: var(--ink); text-underline-offset: 0.22em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; }
+.skip-link { position: absolute; top: -80px; left: 20px; padding: 8px 16px; background: white; }
+.skip-link:focus { top: 8px; }
+.site-header, main, .site-footer { width: min(100% - 48px, 880px); margin-inline: auto; }
+.site-header { padding-block: 32px 22px; border-bottom: 1px solid var(--line); }
+.brand { display: inline-block; font-size: 22px; font-weight: 800; letter-spacing: 0.12em; text-decoration: none; }
+.brand span { color: var(--gold); }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 20px; font-size: 14px; }
+nav a { padding-block: 4px; }
+nav [aria-current="page"] { font-weight: 700; text-decoration-color: var(--gold); text-decoration-thickness: 3px; }
+main { padding-block: 52px 64px; }
+.eyebrow { margin: 0 0 14px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: 0.13em; }
+h1 { margin: 0 0 16px; font-size: clamp(28px, 5vw, 44px); line-height: 1.4; letter-spacing: -0.025em; }
+.lead { max-width: 48em; margin: 0; font-size: 18px; }
+.updated { color: var(--muted); font-size: 13px; margin: 18px 0 0; }
+section { margin-top: 36px; }
+h2 { margin: 0 0 12px; font-size: 22px; line-height: 1.5; }
+p { margin: 0 0 16px; }
+ul, ol { padding-left: 1.5em; margin: 12px 0 20px; }
+li { padding-left: 0.25em; margin-bottom: 8px; }
+.notice { padding: 22px 24px; border-left: 4px solid var(--gold); background: #FFF8E5; }
+.notice p:last-child { margin-bottom: 0; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0; list-style: none; }
+.steps li { padding: 20px; border: 1px solid var(--line); border-radius: 12px; }
+.steps strong { display: block; margin-bottom: 8px; }
+.steps p { margin: 0; font-size: 15px; }
+code { font-size: 0.9em; overflow-wrap: anywhere; }
+.site-footer { padding-block: 28px 36px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-bottom: 18px; }
+.site-footer p { margin: 0; }
+@media (max-width: 600px) {
+    .site-header, main, .site-footer { width: calc(100% - 40px); }
+    .site-header { padding-top: 24px; }
+    .site-header nav { gap: 8px 20px; }
+    main { padding-block: 36px 44px; }
+    .lead { font-size: 16px; }
+    h2 { font-size: 20px; }
+    .steps { grid-template-columns: 1fr; gap: 12px; }
+    .notice { padding: 18px 20px; }
+}
