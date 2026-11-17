@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Discoveryが取得するGoogleデータ、AIへの送信、保存、接続解除と削除について。">
+    <title>プライバシーポリシー | Business Discovery | Peanuts Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="Peanuts Group 会社サイトへ">PEANUTS<span>.</span></a>
+        <nav aria-label="Business Discoveryの案内">
+            <a href="index.html">サービス紹介</a><a href="privacy.html" aria-current="page">プライバシー</a><a href="terms.html">利用条件</a>
+        </nav>
+    </header>
+    <main id="main">
+        <article>
+            <p class="eyebrow">BUSINESS DISCOVERY</p>
+            <h1>プライバシーポリシー</h1>
+            <p class="lead">Peanuts Group（以下「当社」）は、社内用ツールBusiness Discoveryで扱う情報を、以下の方針に従って取り扱います。</p>
+            <p class="updated">制定・最終更新日：<time datetime="2026-11-17">2026年11月17日</time></p>
+
+            <section aria-labelledby="scope">
+                <h2 id="scope">1. 対象と利用目的</h2>
+                <p>本ツールは当社の担当者1名が利用する新規事業調査ツールです。公開情報の調査、AIとの対話による検討、調査結果・出典・判断の記録、次回調査への反映に情報を利用します。</p>
+            </section>
+
+            <section aria-labelledby="access">
+                <h2 id="access">2. 取得・利用するGoogleデータ</h2>
+                <ul>
+                    <li><strong>調査用ファイル：</strong>Google Driveの<code>drive.file</code>権限を用い、本ツールで作成したファイル、または本ツールでの利用を許可されたファイルにアクセスします。専用のGoogleスプレッドシートのセル内容、出典URL、検討メモ、担当者の判断、シートの識別情報・構造を読み取り、調査記録を作成・更新します。</li>
+                    <li><strong>アカウント情報：</strong>Google認証に伴い、氏名、メールアドレス、プロフィール情報を取得することがあります。接続するアカウントの確認に利用します。</li>
+                </ul>
+                <p><code>drive.file</code>は、Google Drive内のすべてのファイルへのアクセス権限ではありません。本ツールの日次運用では、読み書き先を専用の調査シートに固定しています。</p>
+            </section>
+
+            <section class="notice" aria-labelledby="ai">
+                <h2 id="ai">3. OpenAI Codexへの送信</h2>
+                <p>調査シートから読み取った内容と担当者の検討メモを、OpenAIが提供するCodexへ送信します。AIによる要約、候補の紹介・比較、対話、追加調査の整理のために利用します。</p>
+                <p>Googleから取得したデータや検討メモを汎用AIモデルの学習に使用しません。OpenAIサービスの学習利用を無効にした設定で運用します。</p>
+            </section>
+
+            <section aria-labelledby="storage">
+                <h2 id="storage">4. 保存先と認証情報の管理</h2>
+                <p>調査結果と判断はGoogleスプレッドシートに、AIとの対話はCodexのチャットに保存します。また、調査資料や更新用データなどを担当者のMacのローカル作業フォルダに保存します。</p>
+                <p>Googleへの接続に使用する認証情報は、担当者のMac上で、OSのキーチェーン（keyring）を用いた暗号化の仕組みで保護して管理します。調査データへのアクセスは、社内の担当者による利用と、調査・記録に必要なGoogleおよびOpenAIのサービスでの処理に限定します。</p>
+            </section>
+
+            <section aria-labelledby="limits">
+                <h2 id="limits">5. 利用の制限とGoogleのポリシー</h2>
+                <p>Googleから取得したユーザーデータの利用および他のアプリへの転送は、Limited Use（制限付き使用）の要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p>
+                <p>データを販売したり、広告配信・広告ターゲティングに使用したりしません。本ツールから営業メールやメッセージを自動送信する用途にも使用しません。取得した情報は、本ポリシーに記載した調査・対話・記録のために利用します。</p>
+            </section>
+
+            <section aria-labelledby="delete">
+                <h2 id="delete">6. 保存期間・接続解除・削除</h2>
+                <p>調査記録や対話を一定期間で自動削除する仕組みは設けていません。担当者が必要性を確認し、不要になった記録を削除します。</p>
+                <p>Googleとの接続は、<a href="https://myaccount.google.com/connections">Googleアカウントの接続管理</a>からいつでも解除できます。接続を解除すると以後のGoogleデータへのアクセスは停止しますが、すでに保存した記録は自動では削除されません。</p>
+                <ul>
+                    <li>スプレッドシートの記録は、Google SheetsまたはGoogle Driveで削除します。</li>
+                    <li>AIとの対話は、利用しているCodex・OpenAIサービスで削除します。</li>
+                    <li>ローカルに保存した資料や更新用データは、担当者のMacから削除します。</li>
+                </ul>
+                <p>各サービス側での削除処理や保持の扱いには、各サービスの規約・ポリシーが適用されます。削除に関する相談は、下記の窓口で受け付けます。</p>
+            </section>
+
+            <section aria-labelledby="changes">
+                <h2 id="changes">7. 方針の変更とお問い合わせ</h2>
+                <p>取得する情報や利用目的を変更する場合は、このページを更新し、必要な説明と同意の確認を行います。</p>
+                <p>運営：Peanuts Group<br>連絡先：<a href="mailto:tachibana@peanutsgrp.com">tachibana@peanutsgrp.com</a></p>
+            </section>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <nav aria-label="関連ページ"><a href="index.html">サービス紹介</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用条件</a><a href="/">会社サイトへ戻る</a></nav>
+        <p>&copy; 2026 Peanuts Group Inc.</p>
+    </footer>
+</body>
+</html>
